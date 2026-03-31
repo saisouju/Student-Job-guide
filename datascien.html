@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Scientist - FuturePath</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+  scroll-behavior:smooth;
+}
+.container{
+  padding:50px 20px;
+}
+h1{
+  text-align:center;
+  font-size:45px;
+  background:linear-gradient(45deg,#00f5ff,#a855f7,#ff4ecd);
+  -webkit-background-clip:text;
+  color:transparent;
+  margin-bottom:20px;
+}
+h2{
+  color:#00f5ff;
+}
+h4{
+  color:#ff4ecd;
+}
+h4.practice-cert{
+  color:#00f5ff;
+}
+p{
+  color:#ddd;
+}
+.card{
+  background:rgba(255,255,255,0.05);
+  border:none;
+  border-radius:20px;
+  padding:25px;
+  margin:30px auto;
+  max-width:700px;
+  transition:0.3s;
+}
+.card:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 40px rgba(0,255,255,0.4);
+}
+a.course-link{
+  color:#ff4ecd;
+  text-decoration:none;
+}
+a.course-link:hover{
+  color:#00f5ff;
+}
+ul li{
+  color:#ffdd57;
+}
+ul{line-height:1.8;}
+
+.salary-box{
+  text-align:center;
+  margin:30px auto;
+  padding:25px;
+  max-width:700px;
+  border-radius:20px;
+  background:rgba(0,255,255,0.1);
+  border:1px solid #00f5ff;
+}
+.salary-box h3{
+  color:#00f5ff;
+}
+</style>
+</head>
+
+<body>
+<script src="script.js"></script>
+<script>
+checkAuth();
+</script>
+<div class="container">
+
+<h1>Data Scientist</h1>
+
+<p style="text-align:center; max-width:900px; margin:auto;">
+Data Scientists analyze complex data to extract meaningful insights, build predictive models, and help organizations make data-driven decisions using statistics, programming, and machine learning.
+</p>
+
+<!-- 💰 SALARY -->
+<div class="salary-box">
+  <h3>💰 Data Scientist Salary (India)</h3>
+  <p><b>Freshers:</b> ₹4 LPA – ₹8 LPA</p>
+  <p><b>1–3 Years:</b> ₹8 LPA – ₹15 LPA</p>
+  <p><b>Experienced:</b> ₹15 LPA – ₹35+ LPA</p>
+  <p><i>Higher if you know Machine Learning, Deep Learning & real-world projects</i></p>
+</div>
+
+<!-- Navigation -->
+<div style="text-align:center; margin-bottom:30px;">
+  <a href="#python" class="course-link mx-2">Python</a>
+  <a href="#statistics" class="course-link mx-2">Statistics</a>
+  <a href="#ml" class="course-link mx-2">Machine Learning</a>
+  <a href="#visualization" class="course-link mx-2">Data Visualization</a>
+  <a href="#tools" class="course-link mx-2">Tools</a>
+</div>
+
+<!-- Python -->
+<div id="python" class="card">
+<h2>Python</h2>
+<p><b>Full Definition:</b><br>
+Python is a high-level programming language widely used in data science for data analysis, automation, and machine learning due to its simplicity and powerful libraries.
+</p>
+<h4>Why Learn Python?</h4>
+<p>It is the most important language for data science.</p>
+<h4>Resources:</h4>
+<ul>
+<li><a href="https://www.w3schools.com/python/" target="_blank" class="course-link">W3Schools Python</a></li>
+<li><a href="https://www.freecodecamp.org/" target="_blank" class="course-link">FreeCodeCamp Python</a></li>
+</ul>
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>HackerRank</li>
+<li>LeetCode</li>
+</ul>
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Python Certification</li>
+</ul>
+</div>
+
+<!-- Statistics -->
+<div id="statistics" class="card">
+<h2>Statistics</h2>
+<p><b>Full Definition:</b><br>
+Statistics involves collecting, analyzing, and interpreting data. It includes concepts like mean, median, probability, and distributions.
+</p>
+<h4>Why Learn Statistics?</h4>
+<p>It helps in understanding data patterns and making predictions.</p>
+<h4>Resources:</h4>
+<ul>
+<li><a href="https://www.khanacademy.org/math/statistics-probability" target="_blank" class="course-link">Khan Academy</a></li>
+</ul>
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Solve statistical problems</li>
+</ul>
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Statistics Certification</li>
+</ul>
+</div>
+
+<!-- Machine Learning -->
+<div id="ml" class="card">
+<h2>Machine Learning</h2>
+<p><b>Full Definition:</b><br>
+Machine Learning is a field of AI that allows systems to learn from data and improve performance without being explicitly programmed.
+</p>
+<h4>Why Learn ML?</h4>
+<p>Core skill for becoming a data scientist.</p>
+<h4>Resources:</h4>
+<ul>
+<li><a href="https://www.coursera.org/" target="_blank" class="course-link">Coursera ML</a></li>
+</ul>
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Build ML models</li>
+<li>Kaggle competitions</li>
+</ul>
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Machine Learning Certification</li>
+</ul>
+</div>
+
+<!-- Visualization -->
+<div id="visualization" class="card">
+<h2>Data Visualization</h2>
+<p><b>Full Definition:</b><br>
+Data Visualization involves presenting data using charts, graphs, and dashboards for better understanding.
+</p>
+<h4>Why Learn?</h4>
+<p>Helps communicate insights clearly.</p>
+<h4>Resources:</h4>
+<ul>
+<li><a href="https://matplotlib.org/" target="_blank" class="course-link">Matplotlib</a></li>
+</ul>
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Create dashboards</li>
+</ul>
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Data Visualization Certification</li>
+</ul>
+</div>
+
+<!-- Tools -->
+<div id="tools" class="card">
+<h2>Tools</h2>
+<p><b>Full Definition:</b><br>
+Data science tools help in analysis, visualization, and model building.
+</p>
+<h4>Popular Tools:</h4>
+<ul>
+<li>Python (Pandas, NumPy)</li>
+<li>Jupyter Notebook</li>
+<li>Power BI / Tableau</li>
+</ul>
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Real-world datasets</li>
+</ul>
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Tool Certifications</li>
+</ul>
+</div>
+
+<a href="jobsOvrvw.html" style="display:block; text-align:center; margin-top:40px; color:#00f5ff;">
+← Back to Careers
+</a>
+
+</div>
+
+</body>
+</html>

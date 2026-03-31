@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FuturePath</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+/* particles background */
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* logo center */
+.logo-container{
+text-align:center;
+margin-top:30px;
+}
+
+/* glowing logo */
+.logo{
+font-size:60px;
+font-weight:bold;
+background:linear-gradient(45deg,#00f5ff,#a855f7,#ff4ecd);
+-webkit-background-clip:text;
+color:transparent;
+letter-spacing:3px;
+animation:logoGlow 2s infinite alternate;
+}
+
+/* glow animation */
+@keyframes logoGlow{
+0%{
+text-shadow:0 0 10px #00f5ff,0 0 20px #a855f7;
+transform:scale(1);
+}
+100%{
+text-shadow:0 0 30px #ff4ecd,0 0 50px #00f5ff;
+transform:scale(1.05);
+}
+}
+
+/* hero section */
+.hero{
+height:70vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-box{
+background:rgba(255,255,255,0.08);
+padding:60px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+.hero h1{
+font-size:50px;
+font-weight:bold;
+}
+
+.hero p{
+font-size:20px;
+margin-top:10px;
+}
+
+/* glowing button */
+.btn-glow{
+margin-top:20px;
+padding:12px 30px;
+border-radius:30px;
+background:linear-gradient(45deg,#00f5ff,#a855f7);
+border:none;
+color:white;
+font-size:18px;
+transition:0.4s;
+box-shadow:0 0 15px #00f5ff;
+text-decoration:none;
+display:inline-block;
+}
+.btn-glow:hover{
+box-shadow:0 0 25px #00f5ff, 0 0 50px #a855f7, 0 0 75px #ff4ecd;
+transform:scale(1.1);
+}
+
+/* jobs */
+.jobs{
+padding:80px 20px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+border:none;
+border-radius:20px;
+text-align:center;
+padding:30px;
+color:white;
+transition:0.4s;
+}
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+.card i{
+font-size:40px;
+margin-bottom:10px;
+color:#00f5ff;
+}
+
+
+</style>
+</head>
+
+<body>
+    
+
+<div id="particles-js"></div>
+
+<!-- Center Logo -->
+<div class="logo-container">
+<h1 class="logo">
+<i class="fa-solid fa-compass"></i> FuturePath
+</h1>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+<div class="hero-box">
+<h1>Discover Your IT Career</h1>
+<p>Find jobs • Learn skills • Build your future</p>
+<p style="margin:15px 0; font-size:18px; color:#ddd;">
+      FuturePath is your guide to explore IT & AI careers, learn essential skills, and plan your future effectively.
+    </p>
+    <p style="font-size:20px; color:#fff5d1; font-style:italic; margin-bottom:20px;">
+“Your journey starts here – every skill learned is a step toward your dream job!”
+</p>
+<a href="#" onclick="checkLogin()" class="btn-glow">
+Explore Careers
+</a>
+<br><br>
+<a href="login.html" class="btn-glow">Login</a>
+
+<p id="msg" style="margin-top:15px; color:#ff4ecd;"></p>
+</div>
+</div>
+
+<!-- Jobs -->
+<div class="container jobs">
+<h2 class="text-center mb-5">Popular Careers</h2>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card">
+<i class="fa-solid fa-code"></i>
+<h4>Frontend Developer</h4>
+<p>Create websites using HTML, CSS and JavaScript.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<i class="fa-solid fa-server"></i>
+<h4>Backend Developer</h4>
+<p>Build server logic and APIs.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<i class="fa-solid fa-layer-group"></i>
+<h4>Full Stack Developer</h4>
+<p>Work on both frontend and backend.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In - FuturePath</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* Glass card */
+.login-box{
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+text-align:center;
+width:350px;
+animation:fadeIn 1s;
+}
+
+/* Title */
+h2{
+background:linear-gradient(45deg,#00f5ff,#a855f7,#ff4ecd);
+-webkit-background-clip:text;
+color:transparent;
+margin-bottom:20px;
+}
+
+/* Inputs */
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+background:rgba(255,255,255,0.1);
+color:white;
+}
+
+/* Buttons */
+.btn-glow{
+margin-top:10px;
+padding:10px 20px;
+border-radius:30px;
+background:linear-gradient(45deg,#00f5ff,#a855f7);
+border:none;
+color:white;
+font-size:16px;
+transition:0.4s;
+box-shadow:0 0 15px #00f5ff;
+cursor:pointer;
+width:100%;
+}
+.btn-glow:hover{
+box-shadow:0 0 25px #00f5ff, 0 0 50px #a855f7;
+transform:scale(1.05);
+}
+
+/* Message */
+#msg{
+margin-top:15px;
+color:#ff4ecd;
+}
+
+/* Back link */
+a{
+display:block;
+margin-top:15px;
+color:#00f5ff;
+text-decoration:none;
+}
+a:hover{
+color:#ff4ecd;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box animate__animated animate__fadeInDown">
+
+<h2><i class="fa-solid fa-user"></i> Sign In / Login</h2>
+
+<input type="text" id="username" placeholder="Enter Username">
+<input type="password" id="password" placeholder="Enter Password">
+
+<button class="btn-glow" onclick="signIn()">Sign In</button>
+<button class="btn-glow" onclick="login()">Login</button>
+
+<p id="msg"></p>
+
+<a href="FWDprojHmPg.html">← Back to Home</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

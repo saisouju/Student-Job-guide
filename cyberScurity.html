@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cyber Security - FuturePath</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+  scroll-behavior:smooth;
+}
+.container{
+  padding:50px 20px;
+}
+h1{
+  text-align:center;
+  font-size:45px;
+  background:linear-gradient(45deg,#00f5ff,#a855f7,#ff4ecd);
+  -webkit-background-clip:text;
+  color:transparent;
+  margin-bottom:20px;
+}
+h2{
+  color:#00f5ff;
+  margin-top:30px;
+}
+h4{
+  color:#ff4ecd;
+}
+h4.practice-cert{
+  color:#00f5ff;
+}
+p{
+  color:#ddd;
+}
+.card{
+  background:rgba(255,255,255,0.05);
+  border:none;
+  border-radius:20px;
+  padding:25px;
+  margin-bottom:30px;
+  transition:0.3s;
+  max-width:700px;
+  margin:auto;
+}
+.card:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 40px rgba(0,255,255,0.4);
+}
+a.course-link{
+  color:#ff4ecd;
+  text-decoration:none;
+}
+a.course-link:hover{
+  color:#00f5ff;
+}
+ul li{
+  color:#ffdd57;
+}
+</style>
+</head>
+
+<body>
+<script src="script.js"></script>
+<script>
+checkAuth();
+</script>
+<div class="container">
+
+<h1>Cyber Security</h1>
+
+<p style="text-align:center; max-width:900px; margin:auto;">
+Cyber Security is the practice of protecting systems, networks, and data from cyber attacks. It involves identifying vulnerabilities, preventing threats, and ensuring data privacy using modern security techniques and tools.
+</p>
+
+<!-- Navigation -->
+<div style="text-align:center; margin:30px;">
+  <a href="#network" class="course-link mx-2">Networking</a>
+  <a href="#linux" class="course-link mx-2">Linux</a>
+  <a href="#security" class="course-link mx-2">Security Basics</a>
+  <a href="#ethical" class="course-link mx-2">Ethical Hacking</a>
+  <a href="#tools" class="course-link mx-2">Tools</a>
+  <a href="#certs" class="course-link mx-2">Certifications</a>
+</div>
+
+<!-- Networking -->
+<div id="network" class="card">
+<h2>Networking</h2>
+
+<p><b>Full Definition:</b><br>
+Networking is the backbone of cybersecurity that deals with communication between computers and devices. It includes understanding protocols like TCP/IP, DNS, and HTTP, which are essential to detect and prevent cyber attacks.
+</p>
+
+<h4>Why Learn?</h4>
+<p>To understand how data flows and how attackers exploit networks.</p>
+
+<h4>Learn:</h4>
+<ul>
+<li><a href="https://www.cisco.com/" class="course-link">Cisco Networking Basics</a></li>
+<li><a href="https://tryhackme.com/" class="course-link">TryHackMe</a></li>
+</ul>
+
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Cisco Packet Tracer</li>
+<li>Network labs</li>
+</ul>
+
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>CCNA (Cisco Certified)</li>
+</ul>
+</div>
+
+<!-- Linux -->
+<div id="linux" class="card">
+<h2>Linux</h2>
+
+<p><b>Full Definition:</b><br>
+Linux is an open-source operating system widely used in cybersecurity for penetration testing and server management. It provides powerful command-line tools and flexibility for security professionals.
+</p>
+
+<h4>Why Learn?</h4>
+<p>Most cybersecurity tools and servers run on Linux systems.</p>
+
+<h4>Learn:</h4>
+<ul>
+<li><a href="https://linuxjourney.com/" class="course-link">Linux Journey</a></li>
+<li><a href="https://www.kali.org/" class="course-link">Kali Linux Docs</a></li>
+</ul>
+
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Kali Linux</li>
+<li>Virtual Machines</li>
+</ul>
+
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Linux Essentials</li>
+</ul>
+</div>
+
+<!-- Security Basics -->
+<div id="security" class="card">
+<h2>Security Basics</h2>
+
+<p><b>Full Definition:</b><br>
+Security basics include fundamental concepts like encryption, authentication, firewalls, and vulnerabilities. These concepts help protect systems and data from unauthorized access and cyber threats.
+</p>
+
+<h4>Why Learn?</h4>
+<p>Builds a strong foundation for advanced cybersecurity roles.</p>
+
+<h4>Learn:</h4>
+<ul>
+<li><a href="https://www.cybrary.it/" class="course-link">Cybrary</a></li>
+<li><a href="https://www.freecodecamp.org/" class="course-link">FreeCodeCamp</a></li>
+</ul>
+
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Security labs</li>
+<li>Basic vulnerability testing</li>
+</ul>
+
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>CompTIA Security+</li>
+</ul>
+</div>
+
+<!-- Ethical Hacking -->
+<div id="ethical" class="card">
+<h2>Ethical Hacking</h2>
+
+<p><b>Full Definition:</b><br>
+Ethical hacking involves legally testing systems to identify vulnerabilities and security weaknesses. It helps organizations strengthen their defenses by understanding hacker techniques.
+</p>
+
+<h4>Why Learn?</h4>
+<p>To think like a hacker and secure systems effectively.</p>
+
+<h4>Learn:</h4>
+<ul>
+<li><a href="https://tryhackme.com/" class="course-link">TryHackMe</a></li>
+<li><a href="https://www.hackthebox.com/" class="course-link">Hack The Box</a></li>
+</ul>
+
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>CTF Challenges</li>
+<li>Real-world labs</li>
+</ul>
+
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>CEH (Certified Ethical Hacker)</li>
+</ul>
+</div>
+
+<!-- Tools -->
+<div id="tools" class="card">
+<h2>Tools</h2>
+
+<p><b>Full Definition:</b><br>
+Cybersecurity tools are used to scan networks, test vulnerabilities, and secure systems. They help professionals monitor traffic, perform penetration testing, and analyze threats efficiently.
+</p>
+
+<h4>Why Learn?</h4>
+<p>Tools provide practical skills required in real cybersecurity jobs.</p>
+
+<h4>Popular Tools:</h4>
+<ul>
+<li>Wireshark</li>
+<li>Nmap</li>
+<li>Metasploit</li>
+</ul>
+
+<h4>Learn:</h4>
+<ul>
+<li><a href="https://tryhackme.com/" class="course-link">TryHackMe</a></li>
+<li><a href="https://www.hackthebox.com/" class="course-link">Hack The Box</a></li>
+</ul>
+
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Tool-based labs</li>
+<li>CTF challenges</li>
+</ul>
+
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>Tool-specific certifications</li>
+</ul>
+</div>
+
+<!-- Certifications -->
+<div id="certs" class="card">
+<h2>Certifications</h2>
+
+<p>
+Cybersecurity certifications validate your skills and increase job opportunities. They prove your expertise in protecting systems and are highly valued by companies.
+</p>
+
+<h4>Why Certifications?</h4>
+<p>They improve credibility and help you get better job roles.</p>
+
+<h4>Learn:</h4>
+<ul>
+<li><a href="https://www.comptia.org/" class="course-link">CompTIA</a></li>
+<li><a href="https://www.eccouncil.org/" class="course-link">EC-Council</a></li>
+</ul>
+
+<h4 class="practice-cert">Practice:</h4>
+<ul>
+<li>Mock exams</li>
+<li>Hands-on labs</li>
+</ul>
+
+<h4 class="practice-cert">Certificates:</h4>
+<ul>
+<li>CEH</li>
+<li>CompTIA Security+</li>
+<li>CCNA Security</li>
+</ul>
+</div>
+
+<a href="jobsOvrvw.html" style="display:block;text-align:center;margin-top:40px;color:#00f5ff;">
+← Back to Careers
+</a>
+
+</div>
+</body>
+</html>

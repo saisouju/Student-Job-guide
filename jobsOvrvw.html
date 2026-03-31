@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FuturePath - Jobs Overview</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+position:relative;
+height:100vh;
+}
+
+/* Particles container */
+#particles-js{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* Header */
+.page-header{
+text-align:center;
+padding:50px 20px;
+}
+.page-header h1{
+font-size:50px;
+background:linear-gradient(45deg,#00f5ff,#a855f7,#ff4ecd);
+-webkit-background-clip:text;
+color:transparent;
+text-shadow:0 0 15px rgba(168,85,247,0.7);
+}
+.page-header p{
+font-size:18px;
+color:#ccc;
+margin-top:5px;
+}
+
+/* Cards */
+.jobs{
+padding:50px 20px;
+}
+
+.card{
+background:rgba(0,0,0,0.25);
+border:none;
+border-radius:20px;
+text-align:center;
+padding:30px;
+color:white;
+transition:0.4s;
+backdrop-filter: blur(10px);
+cursor:pointer;
+}
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 10px 40px rgba(0,255,255,0.4);
+}
+
+.card i{
+font-size:40px;
+margin-bottom:10px;
+color:#00f5ff;
+}
+
+/* Floating icons */
+.floating-icon{
+position:absolute;
+font-size:25px;
+opacity:0.15;
+animation:floatIcon 12s infinite linear;
+}
+
+@keyframes floatIcon{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-30px);}
+100%{transform:translateY(0px);}
+}
+</style>
+</head>
+
+<body>
+<script src="script.js"></script>
+<script>
+checkAuth();
+</script>
+<!-- Particle background -->
+<div id="particles-js"></div>
+
+<!-- Floating Icons -->
+<i class="fa-solid fa-code floating-icon" style="top:10%; left:15%;"></i>
+<i class="fa-solid fa-database floating-icon" style="top:30%; left:80%;"></i>
+<i class="fa-solid fa-shield-halved floating-icon" style="top:50%; left:40%;"></i>
+<i class="fa-solid fa-layer-group floating-icon" style="top:70%; left:20%;"></i>
+<i class="fa-solid fa-brain floating-icon" style="top:80%; left:75%;"></i>
+
+<div class="page-header">
+<h1>Popular IT & AI Careers</h1>
+<p>Click on a career to see details</p>
+</div>
+
+<div class="container jobs">
+<div class="row g-4">
+
+<!-- Frontend Developer -->
+<div class="col-md-4">
+  <div class="card" onclick="location.href='frontend.html'" style="cursor:pointer;">
+    <i class="fa-solid fa-code"></i>
+    <h4>Frontend Developer</h4>
+    <p>Create websites using HTML, CSS and JavaScript.</p>
+  </div>
+</div>
+
+<!-- Backend Developer -->
+<div class="col-md-4">
+<div class="card" onclick="location.href='backend.html'" style="cursor:pointer;">
+<i class="fa-solid fa-server"></i>
+<h4>Backend Developer</h4>
+<p>Build server logic & databases.</p>
+</div>
+</div>
+
+<!-- Full Stack Developer -->
+<div class="col-md-4">
+<div class="card" onclick="location.href='fullstack.html'" style="cursor:pointer;">
+<i class="fa-solid fa-layer-group"></i>
+<h4>Full Stack Developer</h4>
+<p>Handle both frontend and backend development for complete web applications.</p>
+</div>
+</div>
+
+<!-- Data Scientist -->
+<div class="col-md-4">
+<div class="card" onclick="location.href='datascien.html'" style="cursor:pointer;">
+<i class="fa-solid fa-database"></i>
+<h4>Data Scientist</h4>
+<p>Analyze & interpret complex data using Python & statistics.</p>
+</div>
+</div>
+
+<!-- Cyber Security -->
+<div class="col-md-4">
+<div class="card" onclick="location.href='cyberScurity.html'" style="cursor:pointer;">
+<i class="fa-solid fa-shield-halved"></i>
+<h4>Cyber Security</h4>
+<p>Protect systems & networks from cyber threats.</p>
+</div>
+</div>
+
+</div>
+</div>
+  
+<button onclick="logout()" style="position:absolute; top:20px; right:20px;">
+Logout
+</button>
+</body>
+</html>
