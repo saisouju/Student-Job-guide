@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fanpage Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(120, 103, 136)
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 30px;
+            color: rgb(224, 227, 227);
+        }
+
+        form {
+            background-color: transparent;
+            border: 2px solid rgb(99, 107, 107);
+
+        }
+
+        h3 {
+            color: rgb(224, 227, 227);
+        }
+
+        input,
+        select,
+        textarea {
+            background: transparent;
+        }
+
+        input,
+        textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #fff;
+            padding: 16px;
+            font-size: 13px;
+            color: #fff;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        #submit {
+            background-color: rgb(165, 142, 186);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body background="Lifegoeson.jpg">
+    <h1>Fanpage Form</h1>
+    <form action="proj1.html" method="GET">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="favorite_member">Favorite BTS Member:</label><br>
+        <select id="favorite_member" name="favorite_member" required>
+            <option value="">Select a member</option>
+            <option value="RM">RM</option>
+            <option value="Jin">Jin</option>
+            <option value="Suga">Suga</option>
+            <option value="J-Hope">J-Hope</option>
+            <option value="Jimin">Jimin</option>
+            <option value="V">V</option>
+            <option value="Jungkook">Jungkook</option>
+        </select><br><br>
+        <div>
+            <h3>Gender</h3>
+            <input type="radio" name="gender" id="male" value="male" required> </input>
+            <label for="male"> male </label>
+            <input type="radio" name="gender" id="female" value="female" required> </input>
+            <label for="female">female </label>
+        </div>
+        <div>
+            <label for="birth"> date of birth </label>
+            <input type="date" name="dob" id="birth"> </input>
+        </div>
+        <div>
+            <label for="contact"> contact number </label>
+            <input type="tel" name="contact" id="contact" placeholder="+91" pattern="[0-9]{10}" required></input>
+        </div>
+        <div>
+            <label for="email"> email </label>
+            <input type="email" name="email" id="email" required></input>
+        </div>
+        <div>
+            <label for="about yourself">About Your Fav Member</label>
+            <textarea type="text" name="about yourself" id="about you" row="7" columns="20">wonderful</textarea>
+        </div>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+</html>
